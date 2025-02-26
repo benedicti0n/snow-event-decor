@@ -13,6 +13,9 @@ export default {
         foreground: "var(--foreground)",
       },
     },
+    fontFamily: {
+      bacasime: ["BacasimeAntique", "Arial", "Helvetica", "sans-serif"],
+    }
   },
   plugins: [],
 } satisfies Config;

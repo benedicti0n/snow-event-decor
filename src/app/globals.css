@@ -9,6 +9,6 @@ body {
 }
 
 @font-face {
-  font-family: BacasimeAntique;
-  src: url("/Fonts/BacasimeAntique-Regular.ttf");
+  font-family: "BacasimeAntique";
+  src: url("/Fonts/BacasimeAntique-Regular.ttf") format("truetype");
 }
