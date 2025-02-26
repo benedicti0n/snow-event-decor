@@ -2,12 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "BacasimeAntique";
-  src: url("/Fonts/BacasimeAntique-Regular.ttf") format("truetype");
+body {
+  color: #1a3636;
+  background: #fbf6e9;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-  color: var(--foreground);
-  font-family: "BacasimeAntique", sans-serif;
+@font-face {
+  font-family: BacasimeAntique;
+  src: url("/Fonts/BacasimeAntique-Regular.ttf");
 }
