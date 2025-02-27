@@ -1,4 +1,5 @@
 import FormSection from "@/components/FormSection/FormSection";
+import GallerySection from "@/components/Gallery/GallerySection";
 import Landingpage from "@/components/LandingPage/Landingpage";
 import Navbar from "@/components/Navbar/Navbar";
 import SmallInfoSection from "@/components/SmallInfoSection/SmallInfoSection";
@@ -10,6 +11,7 @@ export default function Home() {
       <Landingpage />
       <SmallInfoSection />
       <FormSection />
+      <GallerySection />
     </div>
   );
 }
