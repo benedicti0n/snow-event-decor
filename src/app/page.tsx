@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer/Footer";
 import FormSection from "@/components/FormSection/FormSection";
 import GallerySection from "@/components/Gallery/GallerySection";
 import Landingpage from "@/components/LandingPage/Landingpage";
@@ -12,6 +13,7 @@ export default function Home() {
       <SmallInfoSection />
       <FormSection />
       <GallerySection />
+      <Footer />
     </div>
   );
 }
