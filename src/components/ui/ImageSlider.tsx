@@ -95,6 +95,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
                         className="w-full flex-shrink-0 relative"
                         style={{ willChange: 'transform' }}
                     >
+                        <div className='w-full h-full absolute bg-black/40'></div>
                         <img
                             src={image.url}
                             alt={image.alt}
@@ -113,8 +114,8 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
                             key={index}
                             onClick={() => goToSlide(index)}
                             disabled={isTransitioning}
-                            className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentIndex
-                                ? 'bg-white w-6'
+                            className={`w-2 h-2 rounded-full transition-all duration-300 ${index === currentIndex
+                                ? 'bg-white w-4'
                                 : 'bg-white/50 hover:bg-white/70'
                                 }`}
                             aria-label={`Go to slide ${index + 1}`}
