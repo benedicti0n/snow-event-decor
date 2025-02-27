@@ -35,7 +35,7 @@ const Landingpage = () => {
                     showIndicators={true}
                 >
                 </ImageSlider>
-                <h1 className="text-8xl font-bacasime text-background absolute top-0 z-60 h-full w-full flex justify-center items-center">Snow Event Decor</h1>
+                <h1 className="text-8xl font-bacasime text-background absolute top-0 z-60 h-screen w-full flex justify-center items-center">Snow Event Decor</h1>
             </div>
         </div>
     );
