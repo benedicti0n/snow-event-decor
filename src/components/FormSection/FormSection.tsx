@@ -40,7 +40,7 @@ const FormSection = () => {
 
     return (
         <div className='w-full bg-background font-bacasime flex flex-col items-center justify-center text-center px-8 md:px-16'>
-            <h1 className='my-4 md:my-8 text-2xl md:text-3xl md:w-1/2'>Congratulations on your celebration to be. <br />
+            <h1 className='mb-4 md:mb-8 text-2xl md:text-3xl md:w-1/2'>Congratulations on your celebration to be. <br />
                 Please fill out the contact form below and we will
                 email you to set up a complimentary consultation.
             </h1>
