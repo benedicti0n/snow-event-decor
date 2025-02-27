@@ -57,7 +57,7 @@ const FormColumn: React.FC<FormColumnProps> = ({ formData, handleChange, errors 
                 type="text"
                 value={formData.eventDate}
                 onChange={handleChange}
-                placeholder="MM/DD/YYYY"
+                placeholder="mm/dd/yyyy"
                 label="Event Date"
                 error={errors.eventDate}
             />

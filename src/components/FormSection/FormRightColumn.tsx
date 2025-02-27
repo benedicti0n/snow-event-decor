@@ -37,7 +37,7 @@ const FormRightColumn: React.FC<FormRightColumnProps> = ({ formData, handleChang
                         rows={5}
                         className="w-full px-3 py-2 border-2 border-text bg-background rounded-lg focus:ring-roseGold focus:ring-2 focus:outline-none text-xl"
                     />
-                    {errors.eventDescription && <p className="text-red-500 text-start text-lg">{errors.eventDescription}</p>}
+                    {errors.eventDescription && <p className="text-red-500 text-start text-sm md:text-lg">{errors.eventDescription}</p>}
                 </div>
 
                 <RadioButtonGroup
@@ -62,7 +62,7 @@ const FormRightColumn: React.FC<FormRightColumnProps> = ({ formData, handleChang
             <div className="mt-auto">
                 <button
                     type="submit"
-                    className="w-full py-3 bg-[#1a2e29] text-white rounded hover:bg-[#15231f] transition-colors"
+                    className="w-full py-2 md:py-3 bg-[#1a2e29] text-background rounded-lg hover:bg-[#15231f] transition-colors text-xl md:text-3xl"
                 >
                     Send
                 </button>

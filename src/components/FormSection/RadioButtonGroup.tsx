@@ -16,21 +16,23 @@ const RadioButtonGroup: React.FC<RadioButtonGroupProps> = ({ name, options, sele
             <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
                 {options.map((option) => (
                     <div className="flex items-center" key={option.value}>
-                        <input
-                            type="radio"
-                            id={option.value}
-                            name={name}
-                            checked={selectedValue === option.value}
-                            onChange={() => onChange(option.value)}
-                            className="mr-2 w-6 h-6 bg-background border-text text-text"
-                        />
+                        <div className='border-2 border-text rounded-full mr-2 w-5 h-5 flex items-center justify-center'>
+                            <input
+                                type="radio"
+                                id={option.value}
+                                name={name}
+                                checked={selectedValue === option.value}
+                                onChange={() => onChange(option.value)}
+                                className="rounded-full w-3 h-3 appearance-none cursor-pointer checked:bg-text"
+                            />
+                        </div>
                         <label htmlFor={option.value} className="text-xl">
                             {option.label}
                         </label>
                     </div>
                 ))}
             </div>
-            {error && <p className="text-red-500 text-start text-lg">{error}</p>} {/* Error message */}
+            {error && <p className="text-red-500 text-start text-sm md:text-lg">{error}</p>} {/* Error message */}
         </div>
     );
 };
