@@ -10,7 +10,8 @@ export default {
     extend: {
       colors: {
         background: "#fbf6e9",
-        text: "#1a3636"
+        text: "#1a3636",
+        roseGold: "#F9C0AB"
       },
     },
     fontFamily: {

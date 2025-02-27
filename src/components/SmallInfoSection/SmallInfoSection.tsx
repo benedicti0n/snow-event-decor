@@ -11,7 +11,7 @@ const SmallInfoSection = () => {
 
             <h1 className='mt-4 flex items-center justify-center gap-2'><LucideInstagram /> @snow_decor.</h1>
 
-            <img src="/Logos/snowdrop.png" alt="" />
+            <img src="/Logos/snowdrop.png" alt="" className='py-6' />
         </div>
     )
 }
