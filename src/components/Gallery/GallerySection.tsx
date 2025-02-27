@@ -3,7 +3,7 @@ import Gallery from './Gallery'
 
 const GallerySection = () => {
     return (
-        <div className='w-full flex flex-col justify-center items-center py-20'>
+        <div className='w-full flex flex-col justify-center items-center py-12 md:py-20'>
             <div className='flex space-x-8 md:space-x-20 font-bacasime text-3xl md:text-6xl text-text'>
                 <h1>Aesthetics</h1>
                 <h1>Style</h1>
