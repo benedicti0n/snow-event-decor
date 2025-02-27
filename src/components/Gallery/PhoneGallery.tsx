@@ -5,7 +5,7 @@ import { words, images } from './data'
 
 const PhoneGallery = () => {
     return (
-        <div className="grid grid-cols-2 gap-0 w-full py-20 font-bacasime text-text">
+        <div className="grid grid-cols-2 gap-0 w-full py-12 md:py-20 text-3xl md:text-5xl font-bacasime text-text">
             {/* Row 1 */}
             <div className="relative aspect-square">
                 <Image
@@ -16,11 +16,11 @@ const PhoneGallery = () => {
                 />
             </div>
             <div className="flex items-center justify-center aspect-square">
-                <h2 className="text-5xl">{words[1]}</h2>
+                <h2>{words[1]}</h2>
             </div>
 
             <div className="flex items-center justify-center aspect-square">
-                <h2 className="text-5xl">{words[2]}</h2>
+                <h2>{words[2]}</h2>
             </div>
             <div className="relative aspect-square">
                 <Image
@@ -41,10 +41,10 @@ const PhoneGallery = () => {
                 />
             </div>
             <div className="flex items-center justify-center aspect-square">
-                <h2 className="text-5xl">{words[3]}</h2>
+                <h2>{words[3]}</h2>
             </div>
             <div className="flex items-center justify-center aspect-square">
-                <h2 className="text-5xl">{words[4]}</h2>
+                <h2>{words[4]}</h2>
             </div>
             <div className="relative aspect-square">
                 <Image
@@ -65,10 +65,10 @@ const PhoneGallery = () => {
                 />
             </div>
             <div className="flex items-center justify-center aspect-square">
-                <h2 className="text-5xl">{words[5]}</h2>
+                <h2>{words[5]}</h2>
             </div>
             <div className="flex items-center justify-center aspect-square">
-                <h2 className="text-5xl">{words[6]}</h2>
+                <h2>{words[6]}</h2>
             </div>
             <div className="relative aspect-square">
                 <Image
@@ -90,10 +90,10 @@ const PhoneGallery = () => {
                 />
             </div>
             <div className="flex items-center justify-center aspect-square">
-                <h2 className="text-5xl">{words[7]}</h2>
+                <h2>{words[7]}</h2>
             </div>
             <div className="flex items-center justify-center aspect-square">
-                <h2 className="text-5xl">{words[8]}</h2>
+                <h2>{words[8]}</h2>
             </div>
             <div className="relative aspect-square">
                 <Image
