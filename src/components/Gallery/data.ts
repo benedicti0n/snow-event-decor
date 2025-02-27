@@ -11,11 +11,11 @@ export const words = {
 
 export const images = {
     1: "/assets/homeimage1.png",
-    2: "/assets/homeimage1.png",
-    3: "/assets/homeimage1.png",
-    4: "/assets/homeimage1.png",
-    5: "/assets/homeimage1.png",
-    6: "/assets/homeimage1.png",
-    7: "/assets/homeimage1.png",
-    8: "/assets/homeimage1.png",
+    2: "/Gallery/gallery2.jpg",
+    3: "/Gallery/gallery3.jpg",
+    4: "/Gallery/gallery4.jpg",
+    5: "/Gallery/gallery5.jpg",
+    6: "/Gallery/gallery6.jpg",
+    7: "/assets/homeImage2.jpg",
+    8: "/assets/homeImage3.jpg",
 }
