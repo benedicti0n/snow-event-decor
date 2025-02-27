@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, MapPin, LucidePhoneOutgoing } from 'lucide-react';
+import { Mail, MapPin, LucidePhoneOutgoing, LucideInstagram } from 'lucide-react';
 import Image from 'next/image';
 
 const Footer: React.FC = () => {
@@ -18,9 +18,9 @@ const Footer: React.FC = () => {
                         <h3 className="text-3xl md:text-4xl">Explore</h3>
                     </div>
                     <ul className="space-y-1 text-base md:text-xl ml-14">
-                        <li>Home</li>
-                        <li>Gallery</li>
-                        <li>Contact Us</li>
+                        <li><a href='#home'>Home</a></li>
+                        <li><a href='gallery'>Gallery</a></li>
+                        <li><a href='contactUs'>Contact Us</a></li>
                     </ul>
                 </div>
 
@@ -31,8 +31,10 @@ const Footer: React.FC = () => {
                         <h3 className="text-3xl md:text-4xl">Socials</h3>
                     </div>
                     <ul className="space-y-1 text-base md:text-xl ml-14">
-                        <li>Instagram</li>
-                        <li>Facebook</li>
+                        <li className='flex justify-center items-center gap-2'>
+                            <LucideInstagram size={20} />
+                            <a href='https://www.instagram.com/snow_decor/' target="_blank" rel="noopener noreferrer"> @snow_decor</a>
+                        </li>
                     </ul>
                 </div>
 
@@ -45,18 +47,24 @@ const Footer: React.FC = () => {
                     <ul className="space-y-1 text-base md:text-xl ml-14">
                         <li className="flex items-center">
                             <LucidePhoneOutgoing size={20} className="mr-2" />
-                            <span>+1 (555) 123-45</span>
+                            <span><a href="tel:+13609414268">+1 360 9414268</a></span>
+                        </li>
+                        <li className="flex items-center">
+                            <LucidePhoneOutgoing size={20} className="mr-2" />
+                            <span><a href="tel:+19165414426">+1 916 5414426</a></span>
                         </li>
                         <li className="flex items-center">
                             <Mail size={20} className="mr-2" />
-                            <span>example@gmail.com</span>
+                            <span><a href="mailto:snoweventdecor@gmail.com">snoweventdecor@gmail.com</a></span>
                         </li>
                         <li className="flex items-start">
                             <MapPin size={20} className="mr-2 mt-1" />
                             <span>
-                                1234 Evergreen Lane,<br />
-                                Suite 200, Los Angeles,<br />
-                                CA 90001, USA
+                                <a href='https://maps.app.goo.gl/V38HWjjSg5LAzVZ79' target="_blank" rel="noopener noreferrer">
+                                    4470 Duckhorn Drive,<br />
+                                    Sacramento CA<br />
+                                    95834, USA
+                                </a>
                             </span>
                         </li>
                     </ul>

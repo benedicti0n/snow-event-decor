@@ -12,7 +12,7 @@ const Navbar = () => {
             <div className="h-full flex justify-between items-center w-full md:hidden">
                 <div className="flex items-center gap-3 md:gap-4">
                     <LucidePhoneOutgoing className="h-5 w-5" />
-                    <h1 className="text-text font-bacasime text-xl md:text-2xl">+1 (360) 9414268</h1>
+                    <h1 className="text-text font-bacasime text-xl md:text-2xl"><a href="tel:+13609414268">+1 360 9414268</a></h1>
                 </div>
                 <Image src="/Logos/logo.png" alt="logo" width={4096} height={4096} className="h-20 w-20" />
                 {/* Hamburger menu button */}
@@ -52,7 +52,7 @@ const Navbar = () => {
                 </div>
                 <div className="h-full flex gap-4 justify-center items-center">
                     <LucidePhoneOutgoing />
-                    <h1 className="text-text font-bacasime text-2xl">+1 (360) 9414268</h1>
+                    <h1 className="text-text font-bacasime text-2xl"><a href="tel:+13609414268">+1 360 9414268</a></h1>
                 </div>
             </div>
         </div>
