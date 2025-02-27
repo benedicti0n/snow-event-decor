@@ -22,7 +22,7 @@ const Landingpage = () => {
     ];
 
     return (
-        <div className="min-h-screen bg-gray-100">
+        <div id="home" className="min-h-screen bg-gray-100">
             {/* Full-width slider */}
             <div className="w-full h-screen">
                 <ImageSlider

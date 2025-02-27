@@ -30,7 +30,7 @@ const Navbar = () => {
                     <a href="#gallery" className="text-text font-bacasime text-xl md:text-2xl">
                         Gallery
                     </a>
-                    <a href="#contact" className="text-text font-bacasime text-xl md:text-2xl">
+                    <a href="#contactUs" className="text-text font-bacasime text-xl md:text-2xl">
                         Contact Us
                     </a>
                 </div>
@@ -46,7 +46,7 @@ const Navbar = () => {
                     <a href="#gallery" className="text-text font-bacasime text-2xl">
                         Gallery
                     </a>
-                    <a href="#contact" className="text-text font-bacasime text-2xl">
+                    <a href="#contactUs" className="text-text font-bacasime text-2xl">
                         Contact Us
                     </a>
                 </div>
