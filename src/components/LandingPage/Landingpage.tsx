@@ -4,25 +4,21 @@ import ImageSlider from "../ui/ImageSlider";
 const Landingpage = () => {
     const images = [
         {
-            url: "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
+            url: "/assets/homeImage1.png",
             alt: "Landscape with mountains and lake"
         },
         {
-            url: "https://images.unsplash.com/photo-1469474968028-56623f02e42e",
+            url: "/assets/homeImage2.jpg",
             alt: "Forest with path"
         },
         {
-            url: "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
+            url: "/assets/homeImage3.jpg",
             alt: "Mountain range at sunset"
         },
         {
-            url: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e",
+            url: "/assets/homeImage4.JPG",
             alt: "Sunlight through forest trees"
         },
-        {
-            url: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05",
-            alt: "Foggy mountains landscape"
-        }
     ];
 
     return (
@@ -35,7 +31,7 @@ const Landingpage = () => {
                     showIndicators={true}
                 >
                 </ImageSlider>
-                <h1 className="text-8xl font-bacasime text-background absolute top-0 z-60 h-screen w-full flex justify-center items-center">Snow Event Decor</h1>
+                <h1 className="text-4xl md:text-8xl font-bacasime text-background absolute top-0 z-60 h-screen w-full flex justify-center items-center">Snow Event Decor</h1>
             </div>
         </div>
     );
