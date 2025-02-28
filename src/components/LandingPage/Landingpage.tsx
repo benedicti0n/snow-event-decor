@@ -4,7 +4,7 @@ import ImageSlider from "../ui/ImageSlider";
 const Landingpage = () => {
     const images = [
         {
-            url: "/assets/homeImage1.png",
+            url: "/assets/homeImage1.jpg",
             alt: "Landscape with mountains and lake"
         },
         {

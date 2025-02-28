@@ -19,8 +19,8 @@ const Footer: React.FC = () => {
                     </div>
                     <ul className="space-y-1 text-base md:text-xl ml-14">
                         <li><a href='#home'>Home</a></li>
-                        <li><a href='gallery'>Gallery</a></li>
-                        <li><a href='contactUs'>Contact Us</a></li>
+                        <li><a href='#gallery'>Gallery</a></li>
+                        <li><a href='#contactUs'>Contact Us</a></li>
                     </ul>
                 </div>
 
