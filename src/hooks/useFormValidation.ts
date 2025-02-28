@@ -20,7 +20,7 @@ const useFormValidation = <T>(schema: ZodSchema<T>) => {
             return true;
         } catch (err) {
             if (err instanceof z.ZodError) {
-                const formattedErrors = err.errors.reduce((acc, curr) => {
+                const formattedErrors = err.errors.reduce((acc: { [key: string]: string }, curr) => {
                     acc[curr.path[0]] = curr.message;
                     return acc;
                 }, {});
