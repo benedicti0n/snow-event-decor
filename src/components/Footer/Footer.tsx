@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
                     <ul className="space-y-1 text-base md:text-xl ml-14">
                         <li className='flex justify-center items-center gap-2'>
                             <LucideInstagram size={20} />
-                            <a href='https://www.instagram.com/snow_decor/' target="_blank" rel="noopener noreferrer"> @snow_decor</a>
+                            <a href='https://www.instagram.com/snow_decor_/' target="_blank" rel="noopener noreferrer"> @snow_decor</a>
                         </li>
                     </ul>
                 </div>

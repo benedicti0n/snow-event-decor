@@ -10,7 +10,7 @@ export const words = {
 }
 
 export const images = {
-    1: "/assets/homeimage1.png",
+    1: "/assets/homeImage1.png",
     2: "/Gallery/gallery2.jpg",
     3: "/Gallery/gallery3.jpg",
     4: "/Gallery/gallery4.jpg",
