@@ -5,8 +5,8 @@ export const words = {
     4: "Romantic",
     5: "Classic",
     6: "Joyous",
-    7: "Joyous",
-    8: "Joyous",
+    7: "Modern",
+    8: "Historic",
 }
 
 export const images = {
