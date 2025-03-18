@@ -21,6 +21,8 @@ const formSchema = z.object({
 const FormSection = () => {
     const { formData, setFormData, errors, handleChange, validate } = useFormValidation(formSchema);
     const [jsonOutput, setJsonOutput] = React.useState("");
+    const [isSubmitting, setIsSubmitting] = React.useState(false);
+    const [submitStatus, setSubmitStatus] = React.useState<'idle' | 'success' | 'error'>('idle');
 
     const handleRadioChange = (value: string) => {
         setFormData((prev) => ({
@@ -29,12 +31,68 @@ const FormSection = () => {
         }));
     };
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         if (validate()) {
-            const jsonData = JSON.stringify(formData, null, 2);
-            setJsonOutput(jsonData);
-            console.log(jsonData);
+            setIsSubmitting(true);
+            setSubmitStatus('idle');
+
+            // Create a formatted email template
+            const emailTemplate = `
+New Event Inquiry Details:
+
+👤 Contact Information:
+----------------------
+Name: ${formData.fullName}
+Email: ${formData.email}
+Phone: ${formData.phoneNumber}
+Location: ${formData.location}
+
+📅 Event Details:
+----------------
+Event Type: ${formData.eventType}
+Event Date: ${formData.eventDate}
+Estimated Guest Count: ${formData.estimateGuestCount}
+Estimated Budget: ${formData.estimateBudget}
+
+📝 Event Description:
+-------------------
+${formData.eventDescription || 'No description provided'}
+
+---
+This inquiry was submitted through the Snow Event Decor website.
+`;
+
+            try {
+                const response = await fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        access_key: 'aba6265b-8f1e-494b-a9d1-3512e4d97011',
+                        from_name: formData.fullName,
+                        email: formData.email,
+                        subject: `New Event Inquiry: ${formData.eventType} - ${formData.fullName}`,
+                        message: emailTemplate
+                    })
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    setSubmitStatus('success');
+                    setJsonOutput(JSON.stringify(formData, null, 2));
+                } else {
+                    setSubmitStatus('error');
+                }
+            } catch (error) {
+                setSubmitStatus('error');
+                console.error('Error submitting form:', error);
+            } finally {
+                setIsSubmitting(false);
+            }
         }
     };
 
@@ -59,10 +117,21 @@ const FormSection = () => {
                     />
                 </form>
 
-                {jsonOutput && (
-                    <div className="mt-8 p-4 bg-gray-100 rounded">
-                        <h3 className="text-lg font-medium mb-2">Form Data (JSON):</h3>
-                        <pre className="whitespace-pre-wrap">{jsonOutput}</pre>
+                {isSubmitting && (
+                    <div className="mt-4 text-center text-2xl">
+                        <p className="text-gray-600">Sending your message...</p>
+                    </div>
+                )}
+
+                {submitStatus === 'success' && (
+                    <div className="mt-4 text-center text-green-600 text-2xl">
+                        <p>Thank you! Your message has been sent successfully.</p>
+                    </div>
+                )}
+
+                {submitStatus === 'error' && (
+                    <div className="mt-4 text-center text-red-600 text-2xl">
+                        <p>Sorry, there was an error sending your message. Please try again later.</p>
                     </div>
                 )}
             </div>

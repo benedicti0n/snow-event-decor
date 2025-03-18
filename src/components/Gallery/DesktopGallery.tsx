@@ -101,6 +101,14 @@ const DesktopGallery = () => {
                     className="object-cover"
                 />
             </div>
+            <div className='col-span-4 flex justify-center mt-10'>
+                <button
+                    onClick={() => window.location.href = '/gallery'}
+                    className="py-2 md:py-3 px-10 bg-[#1a2e29] text-background rounded-lg hover:bg-[#15231f] transition-colors text-xl md:text-3xl"
+                >
+                    Go to Gallery
+                </button>
+            </div>
         </div>
     )
 }
